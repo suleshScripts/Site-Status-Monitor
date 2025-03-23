@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Site Monitor</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Site Monitor</h1>
+        <div class="input-group">
+            <input type="text" id="site-url" placeholder="Enter website URL (e.g., example.com)">
+            <button onclick="startMonitoring()">Start Monitoring</button>
+        </div>
+
+        <div class="status-container">
+            <div class="status-updates">
+                <h2>Real-time Status</h2>
+                <div id="status-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+
+</html>
